@@ -10,7 +10,7 @@ export default function Footer() {
 
   const legal = [
     { name: 'Política de Privacidade', href: '/politica-de-privacidade' },
-    { name: 'Termos de Uso', href: '#' }
+    { name: 'Termos de Uso', href: '/termos-de-uso' }
   ];
 
   return (
