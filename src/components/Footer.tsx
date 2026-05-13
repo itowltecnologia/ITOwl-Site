@@ -1,4 +1,4 @@
-import { Bird } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const links = [
@@ -9,7 +9,7 @@ export default function Footer() {
   ];
 
   const legal = [
-    { name: 'Política de Privacidade', href: '#' },
+    { name: 'Política de Privacidade', href: '/politica-de-privacidade' },
     { name: 'Termos de Uso', href: '#' }
   ];
 
@@ -54,9 +54,15 @@ export default function Footer() {
             <ul className="space-y-3">
               {legal.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-slate-400 hover:text-cyan-400 text-sm transition-colors">
-                    {link.name}
-                  </a>
+                  {link.href.startsWith('/') ? (
+                    <Link to={link.href} className="text-slate-400 hover:text-cyan-400 text-sm transition-colors">
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a href={link.href} className="text-slate-400 hover:text-cyan-400 text-sm transition-colors">
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
