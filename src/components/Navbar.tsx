@@ -29,10 +29,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
           <div className="relative flex items-center h-10 w-auto group-hover:scale-105 transition-transform">
-            <img 
-              src={scrolled ? "/logos/logo-blue.png" : "/logos/logo-white.png"} 
-              alt="ITOWL Logo" 
-              className="h-10 w-auto object-contain"
+            <img
+              src="/logos/logo-white.png"
+              alt="ITOWL Logo"
+              className="h-10 w-auto object-contain transition-all duration-300"
+              style={scrolled ? { filter: 'brightness(0) saturate(100%) invert(22%) sepia(20%) saturate(600%) hue-rotate(135deg) brightness(90%) contrast(95%)' } : undefined}
             />
           </div>
         </a>
