@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav className={cn(
       "fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300",
-      scrolled ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-[#0e7488]/20 py-3" : "bg-transparent"
+      scrolled ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200 py-3" : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
@@ -44,11 +44,11 @@ export default function Navbar() {
                 href={link.href} 
                 className={cn(
                   "font-medium text-sm transition-colors relative group",
-                  scrolled ? "text-slate-700 hover:text-[#0e7488]" : "text-white/90 hover:text-[#3ecbe3]"
+                  scrolled ? "text-slate-700 hover:text-blue-600" : "text-white/90 hover:text-cyan-400"
                 )}
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#1aaec9] rounded-full transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 rounded-full transition-all group-hover:w-full" />
               </a>
             </li>
           ))}
