@@ -70,22 +70,42 @@ export default function Hero() {
             <div className="absolute -inset-10 rounded-full border border-white/10 border-dashed pointer-events-none animate-[spin_30s_linear_infinite]">
               {/* Azure */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-[0_0_20px_rgba(37,99,235,0.5)] flex items-center justify-center p-3 animate-[spin_30s_linear_infinite_reverse]">
-                <img src="/logos/Azure.png" alt="Azure" className="w-full h-full object-contain" />
+                <img 
+                  src="/logos/Azure.png" 
+                  alt="Azure" 
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"; }}
+                />
               </div>
               
               {/* AWS */}
               <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-[0_0_20px_rgba(245,158,11,0.3)] flex items-center justify-center p-3 animate-[spin_30s_linear_infinite_reverse]">
-                <img src="/logos/AWS.png" alt="AWS" className="w-full h-full object-contain" />
+                <img 
+                  src="/logos/AWS.png" 
+                  alt="AWS" 
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"; }}
+                />
               </div>
 
               {/* GCP */}
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center justify-center p-3 animate-[spin_30s_linear_infinite_reverse]">
-                <img src="/logos/Google_Cloud.png" alt="Google Cloud" className="w-full h-full object-contain" />
+                <img 
+                  src="/logos/Google_Cloud.png" 
+                  alt="Google Cloud" 
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg"; }}
+                />
               </div>
 
               {/* Oracle */}
               <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-white shadow-[0_0_20px_rgba(225,29,72,0.3)] flex items-center justify-center p-3 animate-[spin_30s_linear_infinite_reverse]">
-                <img src="/logos/Oracle_Cloud.png" alt="Oracle Cloud" className="w-full h-full object-contain" />
+                <img 
+                  src="/logos/Oracle_Cloud.png" 
+                  alt="Oracle Cloud" 
+                  className="w-full h-full object-contain"
+                  onError={(e) => { e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"; }}
+                />
               </div>
             </div>
           </div>
