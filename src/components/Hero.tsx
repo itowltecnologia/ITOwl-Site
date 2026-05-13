@@ -1,5 +1,33 @@
-import { Cloud, Lock, Zap, Wrench, BarChart } from 'lucide-react';
+import { Cloud } from 'lucide-react';
 import { motion } from 'motion/react';
+import { useEffect, useRef, useState } from 'react';
+
+function CountUp({ to, decimals = 0, duration = 2000 }: { to: number; decimals?: number; duration?: number }) {
+  const [value, setValue] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !started.current) {
+        started.current = true;
+        const start = performance.now();
+        const tick = (now: number) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          setValue(parseFloat((ease * to).toFixed(decimals)));
+          if (progress < 1) requestAnimationFrame(tick);
+          else setValue(to);
+        };
+        requestAnimationFrame(tick);
+      }
+    }, { threshold: 0.5 });
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [to, decimals, duration]);
+
+  return <span ref={ref}>{value.toFixed(decimals)}</span>;
+}
 
 export default function Hero() {
   return (
@@ -53,15 +81,21 @@ export default function Hero() {
             
             <div className="flex justify-between gap-6 mb-8 border-t border-white/10 pt-8">
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-extrabold text-white">99.9%</span>
+                <span className="text-2xl font-extrabold text-white">
+                  <CountUp to={99.9} decimals={1} duration={2000} />%
+                </span>
                 <span className="text-xs font-semibold text-white/50 tracking-wider uppercase mt-1">Uptime</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-extrabold text-white">24/7</span>
+                <span className="text-2xl font-extrabold text-white">
+                  <CountUp to={24} duration={1500} />/7
+                </span>
                 <span className="text-xs font-semibold text-white/50 tracking-wider uppercase mt-1">Suporte</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-extrabold text-white">+200</span>
+                <span className="text-2xl font-extrabold text-white">
+                  +<CountUp to={200} duration={2000} />
+                </span>
                 <span className="text-xs font-semibold text-white/50 tracking-wider uppercase mt-1">Clientes</span>
               </div>
             </div>
