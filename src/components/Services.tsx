@@ -51,7 +51,7 @@ export default function Services() {
     <section id="servicos" className="py-24 bg-slate-50 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
+          <span className="inline-block bg-[#c2f3fb] text-[#07434f] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-4">
             Serviços
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
@@ -72,9 +72,9 @@ export default function Services() {
               transition={{ duration: 0.5, delay: idx * 0.05 }}
               className={cn(
                 "p-7 rounded-2xl border transition-all duration-300 shadow-sm flex flex-col",
-                svc.highlight 
-                  ? "bg-gradient-to-br from-blue-600 to-indigo-700 border-transparent text-white shadow-blue-900/20" 
-                  : "bg-white border-slate-200 hover:-translate-y-1.5 hover:shadow-lg hover:border-blue-300"
+                svc.highlight
+                  ? "bg-gradient-to-br from-[#0b5c6b] to-[#07434f] border-transparent text-white shadow-[#0b5c6b]/30"
+                  : "bg-white border-slate-200 hover:-translate-y-1.5 hover:shadow-lg hover:border-[#1aaec9]"
               )}
             >
               <div className="mb-5 bg-white/10 w-12 h-12 rounded-lg flex items-center justify-center">
@@ -86,13 +86,13 @@ export default function Services() {
               )}>{svc.title}</h3>
               <p className={cn(
                 "text-sm leading-relaxed mb-6 flex-grow",
-                svc.highlight ? "text-blue-100" : "text-slate-600"
+                svc.highlight ? "text-[#c2f3fb]" : "text-slate-600"
               )}>
                 {svc.desc}
               </p>
 
               {svc.highlight && (
-                <a href="#contato" className="mt-auto inline-flex items-center justify-center bg-white text-blue-600 px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-blue-50 transition-colors">
+                <a href="#contato" className="mt-auto inline-flex items-center justify-center bg-white text-[#0b5c6b] px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-[#edfbfe] transition-colors">
                   Saiba mais
                 </a>
               )}
