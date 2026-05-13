@@ -21,8 +21,25 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4 group inline-flex">
-              <Bird className="w-8 h-8 text-cyan-400 group-hover:scale-110 transition-transform" />
-              <span className="text-2xl font-extrabold tracking-tight text-white group-hover:text-cyan-400 transition-colors">ITOWL</span>
+              {/* Logo container para o rodapé. */}
+              <div className="relative flex items-center h-10 w-auto group-hover:scale-105 transition-transform">
+                <img 
+                  src="/logos/logo-white.png" 
+                  alt="ITOWL Logo" 
+                  className="h-10 w-auto object-contain z-10"
+                  onError={(e) => {
+                    // Fallback para o ícone caso a imagem ainda não exista
+                    e.currentTarget.style.display = 'none';
+                    const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                    if (fallback) fallback.style.display = 'flex';
+                  }}
+                />
+                {/* Fallback caso a imagem não exista */}
+                <div className="flex items-center gap-2 hidden z-0">
+                  <Bird className="w-8 h-8 text-cyan-400" />
+                  <span className="text-2xl font-extrabold tracking-tight text-white transition-colors">ITOWL</span>
+                </div>
+              </div>
             </a>
             <p className="text-slate-400 max-w-sm leading-relaxed text-sm">
               Especialistas em cloud e infraestrutura para empresas que buscam inovação e resultados.

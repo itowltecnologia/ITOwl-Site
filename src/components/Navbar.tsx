@@ -28,11 +28,28 @@ export default function Navbar() {
     )}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 group">
-          <Bird className="w-8 h-8 text-cyan-400 group-hover:scale-110 transition-transform" />
-          <span className={cn(
-            "text-2xl font-extrabold tracking-tight transition-colors",
-            scrolled ? "text-slate-900" : "text-white"
-          )}>ITOWL</span>
+          {/* Logo container. Se as imagens logo-white.png e logo-blue.png forem colocadas em /public/logos/, elas aparecerão aqui! */}
+          <div className="relative flex items-center h-10 w-auto group-hover:scale-105 transition-transform">
+            <img 
+              src={scrolled ? "/logos/logo-blue.png" : "/logos/logo-white.png"} 
+              alt="ITOWL Logo" 
+              className="h-10 w-auto object-contain z-10"
+              onError={(e) => {
+                // Fallback para o ícone caso a imagem ainda não exista (esconde a tag de imagem com falha)
+                e.currentTarget.style.display = 'none';
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = 'flex';
+              }}
+            />
+            {/* Fallback caso a imagem não exista */}
+            <div className="flex items-center gap-2 hidden z-0">
+              <Bird className="w-8 h-8 text-cyan-400" />
+              <span className={cn(
+                "text-2xl font-extrabold tracking-tight transition-colors",
+                scrolled ? "text-slate-900" : "text-white"
+              )}>ITOWL</span>
+            </div>
+          </div>
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
