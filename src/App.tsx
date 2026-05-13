@@ -12,7 +12,6 @@ import Networking from "./components/Networking";
 import CtaBanner from "./components/CtaBanner";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import AiWidget from "./components/AiWidget";
 
 export default function App() {
   return (
@@ -26,7 +25,6 @@ export default function App() {
       <CtaBanner />
       <Contact />
       <Footer />
-      <AiWidget />
     </div>
   );
 }
