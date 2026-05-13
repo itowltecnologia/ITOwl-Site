@@ -67,26 +67,25 @@ export default function Hero() {
             </div>
 
             {/* Orbit Animation */}
-            <div className="absolute -inset-6 border border-white/10 border-dashed rounded-full pointer-events-none">
-              <div className="animate-orbit" style={{ '--orbit-i': 0 } as React.CSSProperties}>
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center -rotate-[calc(var(--orbit-i)*90deg)] text-white shadow-xl">
-                  <Lock className="w-5 h-5 text-indigo-400" />
-                </div>
+            <div className="absolute -inset-10 rounded-full border border-white/10 border-dashed pointer-events-none animate-[spin_30s_linear_infinite]">
+              {/* Azure */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white shadow-[0_0_20px_rgba(37,99,235,0.5)] flex items-center justify-center p-2.5 animate-[spin_30s_linear_infinite_reverse]">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" className="w-full h-full object-contain" />
               </div>
-              <div className="animate-orbit" style={{ '--orbit-i': 1 } as React.CSSProperties}>
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center -rotate-[calc(var(--orbit-i)*90deg)] text-white shadow-xl">
-                  <Zap className="w-5 h-5 text-amber-400" />
-                </div>
+              
+              {/* AWS */}
+              <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white shadow-[0_0_20px_rgba(245,158,11,0.3)] flex items-center justify-center p-2.5 animate-[spin_30s_linear_infinite_reverse]">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-full h-full object-contain" />
               </div>
-              <div className="animate-orbit" style={{ '--orbit-i': 2 } as React.CSSProperties}>
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center -rotate-[calc(var(--orbit-i)*90deg)] text-white shadow-xl">
-                  <Wrench className="w-5 h-5 text-emerald-400" />
-                </div>
+
+              {/* GCP */}
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-14 h-14 rounded-full bg-white shadow-[0_0_20px_rgba(16,185,129,0.3)] flex items-center justify-center p-2.5 animate-[spin_30s_linear_infinite_reverse]">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud" className="w-full h-full object-contain" />
               </div>
-              <div className="animate-orbit" style={{ '--orbit-i': 3 } as React.CSSProperties}>
-                <div className="w-10 h-10 rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center -rotate-[calc(var(--orbit-i)*90deg)] text-white shadow-xl">
-                  <BarChart className="w-5 h-5 text-rose-400" />
-                </div>
+
+              {/* Oracle */}
+              <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white shadow-[0_0_20px_rgba(225,29,72,0.3)] flex items-center justify-center p-2.5 animate-[spin_30s_linear_infinite_reverse]">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="Oracle Cloud" className="w-full h-full object-contain" />
               </div>
             </div>
           </div>
