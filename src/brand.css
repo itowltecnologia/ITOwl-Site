@@ -1,0 +1,67 @@
+/* =====================================================
+   ITOWL BRAND — não editar via Google AI Studio
+   Cores extraídas do Brand Kit oficial no Canva
+   ===================================================== */
+
+:root {
+  --brand-950: #021a1f;
+  --brand-900: #042d35;
+  --brand-800: #07434f;
+  --brand-700: #0b5c6b;
+  --brand-600: #0e7488;
+  --brand-500: #128fa6;
+  --brand-400: #1aaec9;
+  --brand-300: #3ecbe3;
+  --brand-200: #7de0f0;
+  --brand-100: #c2f3fb;
+  --brand-50:  #edfbfe;
+}
+
+/* Hero background */
+#home {
+  background-color: var(--brand-900) !important;
+}
+#home > div:first-child {
+  background: linear-gradient(135deg, var(--brand-950), var(--brand-700), var(--brand-600)) !important;
+}
+
+/* Networking section background */
+#solucoes {
+  background-color: var(--brand-900) !important;
+}
+
+/* Primary buttons — override blue */
+a[href="#contato"].btn-primary,
+a[class*="bg-blue-6"] {
+  background-color: var(--brand-600) !important;
+}
+a[class*="bg-blue-6"]:hover {
+  background-color: var(--brand-700) !important;
+}
+
+/* CTA Banner */
+section[class*="from-blue-6"] {
+  background: linear-gradient(to right, var(--brand-700), var(--brand-600)) !important;
+}
+
+/* Gradient text highlight */
+span[class*="from-sky-4"] {
+  background-image: linear-gradient(90deg, var(--brand-300), var(--brand-200)) !important;
+}
+
+/* Hover borders */
+[class*="hover:border-blue-3"]:hover,
+[class*="hover:border-blue-2"]:hover {
+  border-color: var(--brand-400) !important;
+}
+
+/* Tags / badges */
+span[class*="bg-blue-100"] {
+  background-color: var(--brand-100) !important;
+  color: var(--brand-800) !important;
+}
+
+/* Navbar hover */
+a[class*="hover:text-blue-6"]:hover {
+  color: var(--brand-600) !important;
+}
