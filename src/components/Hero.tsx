@@ -3,10 +3,10 @@ import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-slate-900">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-[#042d35]">
       {/* Background Gradients */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-sky-900 opacity-90" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(6,182,212,0.15)_0%,transparent_70%),radial-gradient(ellipse_at_20%_80%,rgba(139,92,246,0.1)_0%,transparent_60%)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#021a1f] via-[#0b5c6b] to-[#0e7488] opacity-95" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(26,174,201,0.18)_0%,transparent_70%),radial-gradient(ellipse_at_20%_80%,rgba(14,116,136,0.15)_0%,transparent_60%)]" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
@@ -24,7 +24,7 @@ export default function Hero() {
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
              Sua jornada para<br/>
-             <span className="bg-gradient-to-r from-sky-400 to-indigo-400 bg-clip-text text-transparent">a nuvem</span> começa aqui
+             <span className="bg-gradient-to-r from-[#3ecbe3] to-[#7de0f0] bg-clip-text text-transparent">a nuvem</span> começa aqui
           </h1>
           
           <p className="text-lg text-white/80 max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed">
@@ -32,7 +32,7 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-            <a href="#contato" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-xl font-semibold transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-600/30">
+            <a href="#contato" className="bg-[#0e7488] hover:bg-[#0b5c6b] text-white px-8 py-3.5 rounded-xl font-semibold transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#0e7488]/40 border border-[#1aaec9]/30">
               Fale conosco
             </a>
             <a href="#servicos" className="bg-white/5 hover:bg-white/15 border border-white/30 text-white px-8 py-3.5 rounded-xl font-semibold transition-all backdrop-blur-sm">

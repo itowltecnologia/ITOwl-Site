@@ -26,11 +26,11 @@ export default function Networking() {
   ];
 
   return (
-    <section id="solucoes" className="py-24 bg-slate-900 relative">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.05)_0%,transparent_50%)]" />
+    <section id="solucoes" className="py-24 bg-[#042d35] relative">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(26,174,201,0.08)_0%,transparent_50%)]" />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="inline-block bg-cyan-950 border border-cyan-800 text-cyan-400 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-4 shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+          <span className="inline-block bg-[#07434f] border border-[#0e7488] text-[#3ecbe3] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-4 shadow-[0_0_15px_rgba(26,174,201,0.2)]">
             Networking
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">
@@ -49,7 +49,7 @@ export default function Networking() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.06] hover:border-cyan-500/50 hover:-translate-y-1 transition-all duration-300"
+              className="bg-white/[0.03] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.06] hover:border-[#1aaec9]/50 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="bg-slate-800/50 w-14 h-14 rounded-xl border border-white/5 flex items-center justify-center mb-5">
                 {item.icon}
