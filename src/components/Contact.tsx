@@ -40,7 +40,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
           <div className="lg:col-span-5">
-            <span className="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
+            <span className="inline-block bg-[#c2f3fb] text-[#07434f] px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5">
               Contato
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-5 tracking-tight">Entre em contato</h2>
@@ -84,22 +84,22 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-bold text-slate-700">Nome</label>
-                  <input type="text" id="name" required placeholder="Seu nome completo" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors" />
+                  <input type="text" id="name" required placeholder="Seu nome completo" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0e7488]/20 focus:border-[#0e7488] transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-bold text-slate-700">E-mail</label>
-                  <input type="email" id="email" required placeholder="seu@email.com" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors" />
+                  <input type="email" id="email" required placeholder="seu@email.com" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0e7488]/20 focus:border-[#0e7488] transition-colors" />
                 </div>
               </div>
               <div className="space-y-2">
                 <label htmlFor="company" className="text-sm font-bold text-slate-700">Empresa</label>
-                <input type="text" id="company" placeholder="Nome da sua empresa" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors" />
+                <input type="text" id="company" placeholder="Nome da sua empresa" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0e7488]/20 focus:border-[#0e7488] transition-colors" />
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-bold text-slate-700">Mensagem</label>
-                <textarea id="message" required rows={4} placeholder="Como podemos ajudar?" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-colors resize-y min-h-[120px]"></textarea>
+                <textarea id="message" required rows={4} placeholder="Como podemos ajudar?" className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#0e7488]/20 focus:border-[#0e7488] transition-colors resize-y min-h-[120px]"></textarea>
               </div>
-              <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all hover:shadow-lg hover:-translate-y-0.5">
+              <button type="submit" className="w-full bg-[#0e7488] hover:bg-[#0b5c6b] text-white font-bold py-4 rounded-xl transition-all hover:shadow-lg hover:shadow-[#0e7488]/30 hover:-translate-y-0.5">
                 Enviar mensagem
               </button>
             </form>

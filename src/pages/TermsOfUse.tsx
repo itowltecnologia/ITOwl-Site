@@ -48,7 +48,7 @@ export default function TermsOfUse() {
 
           <Section title="2. Sobre a ITOWL">
             <p>
-              A ITOWL Tecnologia é uma empresa brasileira especializada em soluções de cloud, infraestrutura de TI, redes corporativas (Networking), managed services, monitoramento e automação de infraestrutura.
+              A <strong>ITOWL Tecnologia</strong>, razão social <strong>Corp Cloud Serviços de Ti Ltda - ME</strong>, CNPJ <strong>58.208.882/0001-65</strong>, é uma empresa brasileira especializada em soluções de cloud, infraestrutura de TI, redes corporativas (Networking), managed services, monitoramento e automação de infraestrutura.
             </p>
             <p>
               As informações disponibilizadas neste site têm caráter exclusivamente informativo e institucional, destinando-se a apresentar nossos serviços e facilitar o contato com potenciais clientes e parceiros.
@@ -160,6 +160,8 @@ export default function TermsOfUse() {
             </p>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-6">
               <p className="text-slate-700 text-sm"><strong className="text-slate-900">ITOWL Tecnologia</strong></p>
+              <p className="text-slate-600 text-sm">Corp Cloud Serviços de Ti Ltda - ME</p>
+              <p className="text-slate-600 text-sm">CNPJ: 58.208.882/0001-65</p>
               <p className="text-slate-600 text-sm mt-1">E-mail: contato@itowl.com.br</p>
               <p className="text-slate-600 text-sm">Site: www.itowl.com.br</p>
               <p className="text-slate-600 text-sm">Brasil</p>
